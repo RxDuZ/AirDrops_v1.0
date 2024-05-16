@@ -23,7 +23,7 @@ class DropTask extends Task {
 
     public function __construct(private Player $player, private Position $position, private int $countdownSeconds)
     {
-        $this->height = ($position->getY() + 18);
+        $this->height = ($position->getY() + 19);
     }
 
     public function onRun(): void
