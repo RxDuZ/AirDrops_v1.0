@@ -1,0 +1,10 @@
+name: AirDrops
+main: rxduz\airdrops\Main
+api: 5.0.0
+version: 1.0
+author: "iRxDuZ"
+
+permissions:
+  airdrop.command.use:
+    descripcion: "Allow to use /airdrop command"
+    default: op

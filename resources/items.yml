@@ -1,0 +1,36 @@
+items:
+- id: "diamond"
+  count: 16
+  chance: 18
+- id: "diamond_sword"
+  count: 1
+  chance: 14
+  customname: "&9AirDrop Sword"
+  enchantments:
+  - id: 9
+    level: 3
+- id: "diamond_axe"
+  count: 1
+  chance: 14
+  customname: "&9AirDrop Axe"
+  enchantments:
+  - id: 15
+    level: 5
+- id: "diamond_chestplate"
+  count: 1
+  chance: 10
+  enchantments:
+  - id: 0
+    level: 5
+- id: "ender_pearl"
+  count: 16
+  chance: 18
+- id: "totem"
+  count: 1
+  chance: 18
+- id: "bow"
+  count: 1
+  chance: 14
+  enchantments:
+  - id: 21
+    level: 1

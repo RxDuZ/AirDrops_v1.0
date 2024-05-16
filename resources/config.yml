@@ -1,0 +1,54 @@
+#   █████╗ ██╗██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ███████╗
+#  ██╔══██╗██║██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝
+#  ███████║██║██████╔╝██║  ██║██████╔╝██║   ██║██████╔╝███████╗
+#  ██╔══██║██║██╔══██╗██║  ██║██╔══██╗██║   ██║██╔═══╝ ╚════██║
+#  ██║  ██║██║██║  ██║██████╔╝██║  ██║╚██████╔╝██║     ███████║
+#  ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚══════╝
+#                                                              
+# AirDrops config made by iRxDuZ <3
+
+# Item for AirDrop
+airdrop-block: "chest"
+
+# Item custom name
+airdrop-block-customname: "&bAirDrop"
+
+# Item lore
+airdrop-block-lore: "&7Place to drop"
+
+# How many slots will be occupied in the chest?
+items-to-drop: 3
+
+# Time it takes to drop (in seconds)
+time-to-drop: 3
+
+# Sound list: https://www.digminecraft.com/lists/sound_list_pe.php
+countdown-sound: "random.click"
+
+drop-sound: "ambient.weather.lightning.impact"
+
+# Activated lightning to drop? use (true = yes false = no)
+lightning-to-drop: true
+
+# Activated particles to countdown? use (true = yes false = no)
+particle-to-countdown: true
+
+# Activated particles to drop? use (true = yes false = no)
+particle-to-drop: true
+
+# Automatic meteorites?
+meteorite: true
+
+# Time in which they will fall (in seconds)
+meteorite-time: 180
+
+# Message when falling
+meteorite-broadcast-message: "&9Un meteorito cayo en &e{COORDINATES}"
+
+# Random minimum and maximum coordinates where they will fall
+random-position:
+  world: "world"
+  minx: 1
+  maxx: 1500
+  minz: 1
+  maxz: 1500
