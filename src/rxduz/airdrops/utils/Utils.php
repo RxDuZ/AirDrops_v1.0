@@ -25,24 +25,24 @@ class Utils {
     }
 
     /**
-	 * Sends a certain sound to a player (from game resources).
-	 * @param Player $player
-	 * @param string $soundName		You can find all sounds here: https://minecraft.fandom.com/wiki/Sounds.json/Bedrock_Edition_values
-	 * @param float $volume			Default: 1.0
-	 * @param float $pitch 			Default: 1.0
-	*/
-	public static function playSound(Player $player, string $soundName, float $volume = 1.0, float $pitch = 1.0) {
-		$pk = new PlaySoundPacket();
-		$pk->soundName = $soundName;
-		$pk->x = (int)$player->getLocation()->asVector3()->getX();
-		$pk->y = (int)$player->getLocation()->asVector3()->getY();
-		$pk->z = (int)$player->getLocation()->asVector3()->getZ();
-		$pk->volume = $volume;
-		$pk->pitch = $pitch;
-		$player->getNetworkSession()->sendDataPacket($pk);
-	}
+    * Sends a certain sound to a player (from game resources).
+    * @param Player $player
+    * @param string $soundName		You can find all sounds here: https://minecraft.fandom.com/wiki/Sounds.json/Bedrock_Edition_values
+    * @param float $volume			Default: 1.0
+    * @param float $pitch 			Default: 1.0
+    */
+    public static function playSound(Player $player, string $soundName, float $volume = 1.0, float $pitch = 1.0): void {
+        $pk = new PlaySoundPacket();
+	$pk->soundName = $soundName;
+	$pk->x = (int)$player->getLocation()->asVector3()->getX();
+	$pk->y = (int)$player->getLocation()->asVector3()->getY();
+	$pk->z = (int)$player->getLocation()->asVector3()->getZ();
+	$pk->volume = $volume;
+	$pk->pitch = $pitch;
+	$player->getNetworkSession()->sendDataPacket($pk);
+    }
 
-	public static function addStrike(Location $location) {
+    public static function addStrike(Location $location): void {
         $light = new AddActorPacket();
         $light->type = "minecraft:lightning_bolt";
         $light->actorUniqueId = Entity::nextRuntimeId();
