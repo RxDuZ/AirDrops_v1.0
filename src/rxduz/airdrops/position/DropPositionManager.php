@@ -73,16 +73,16 @@ class DropPositionManager {
     }
 
     public function generatePosition(int $minx, int $maxx, int $minz, int $maxz, World $world): ? Position2D {
-		$x = $this->getRandom2DCoordinates($minx, $maxx);
+        $x = $this->getRandom2DCoordinates($minx, $maxx);
 
-		$z = $this->getRandom2DCoordinates($minz, $maxz);
+	$z = $this->getRandom2DCoordinates($minz, $maxz);
 
-		return new Position2D($x + 0.5, $z + 0.5, $world);
-	}
+	return new Position2D($x + 0.5, $z + 0.5, $world);
+    }
 
-	public function getRandom2DCoordinates(int $min, int $max): int {
-		return mt_rand($min, $max);
-	}
+    public function getRandom2DCoordinates(int $min, int $max): int {
+        return mt_rand($min, $max);
+    }
 
 }
 
